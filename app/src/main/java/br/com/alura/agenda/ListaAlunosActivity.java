@@ -81,9 +81,23 @@ public class ListaAlunosActivity extends AppCompatActivity {
         if (!site.startsWith("http://")) {
             site = "http://" + site;
         }
-
         intentSite.setData(Uri.parse(site));
         itemSite.setIntent(intentSite);
+
+        MenuItem itemSms = menu.add("Enviar SMS");
+        Intent intentSms = new Intent(Intent.ACTION_VIEW);
+        intentSms.setData(Uri.parse("sms:" +  aluno.getTelefone()));
+        itemSms.setIntent(intentSms);
+
+
+        MenuItem itemMapa = menu.add("Visualizar no mapa");
+        Intent intentMapa = new Intent(Intent.ACTION_VIEW);
+
+
+
+        intentMapa.setData(Uri.parse("geo:0,0?q="+ aluno.getEndereco()));
+        itemMapa.setIntent(intentMapa);
+
 
         MenuItem menuDeletar = menu.add("Deletar");
         menuDeletar.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
