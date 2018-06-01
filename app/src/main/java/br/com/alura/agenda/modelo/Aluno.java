@@ -8,6 +8,7 @@ public class Aluno implements Serializable {
     private String nome;
     private String endereco;
     private String telefone;
+    private String caminhoFoto;
     private String site;
     private Double nota;
 
@@ -19,9 +20,13 @@ public class Aluno implements Serializable {
         this.id = id;
     }
 
+
+
     public String getNome() {
         return nome;
     }
+
+    public String getCaminhoFoto() {  return caminhoFoto;  }
 
     public void setNome(String nome) {
         this.nome = nome;
@@ -58,6 +63,8 @@ public class Aluno implements Serializable {
     public void setNota(Double nota) {
         this.nota = nota;
     }
+
+    public void setCaminhoFoto(String caminhoFoto) { this.caminhoFoto = caminhoFoto;  }
 
     @Override
     public String toString() {
