@@ -20,8 +20,6 @@ public class Aluno implements Serializable {
         this.id = id;
     }
 
-
-
     public String getNome() {
         return nome;
     }
