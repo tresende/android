@@ -34,4 +34,31 @@
             android:textSize="24sp"
             android:text="Telefone" />
     </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginRight="16dp"
+        android:gravity="right">
+
+        <TextView
+            android:id="@+id/item_endereco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:paddingTop="8dp"
+            android:text="Endereço" />
+
+        <TextView
+            android:id="@+id/item_site"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:paddingTop="8dp"
+            android:text="site" />
+    </LinearLayout>
+
+
 </LinearLayout>
